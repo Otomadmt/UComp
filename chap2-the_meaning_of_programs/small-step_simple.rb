@@ -287,16 +287,6 @@ end
 #         )
 #     ).run
 
-# HELPERS
-
-# class H
-# NoMethodError: undefined method `del' for H:Class
-# What?
-#     def del(name)
-#         Object.send(:remove_const, :name)
-#     end
-# end
-
 Machine.new(
     Add.new(Variable.new(:x), Variable.new(:y)),
     { x: Number.new(3), y: Number.new(6) }
